@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+
+/* Tailwind responsive styles for only the special card on smaller screens */
+
+@media (min-width: 768px) and (max-width: 1022px) {
+    .special-card h1 {
+        @apply w-[652px];
+    }
+
+    .special-card p {
+        @apply min-w-[652px];
+    }
+
+    .special-card {
+        background-color:#F1FFF5 ;
+        box-shadow: #F1FFF5;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%);
+    @apply max-h-[442px] shadow-xl rounded-lg min-w-[695px]  ;
+    
+    }
+}
+
